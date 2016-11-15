@@ -1,0 +1,110 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Portfolio section*/
+
+section {
+  color: black;
+  background-size: cover;
+
+}
+
+.portfolio-item {
+  padding: 1%;
+  color: white;
+  /*I need these items to be of the fixed size. This way it's much easier to do right scaling*/
+  height: 100px;
+  width:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Portfolio items*/
+
+#id{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu1{
+  background-color: #103ffb;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#menu2{
+  background-color: #fec54a;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#menu3{
+  background-color: #b232b0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#menu4{
+  background-color: #24d6e0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-item {
+  margin: 5%;
+  right: 0;
+  border: 1px outset rgba(255, 255, 255, 0.0);
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+}
+
+
+
+#portfolio .portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  color: #fff;
+  text-transform: none;
+  font-family: "Cabin Sketch";
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  margin: 0;
+}
+
+
+@media (min-width:800px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px 10px;
+  }
+}
+
+.col-md-4 {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px outset rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 1%;
+  text-align: center;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
