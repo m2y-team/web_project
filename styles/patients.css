@@ -1,0 +1,25 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.error{
+    background-color: red;
+}
+
+.done{
+    background-color: limegreen;
+}
+
+body {
+    margin: 10%;
+}
+
+div #title {
+    font-weight: bold;
+}
+
+/*#description {
+    margin: 3%;
+}*/
