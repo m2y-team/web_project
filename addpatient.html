@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/toolbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/addpatient.css">
+
+    </head>
+    <body>
+
+  <div class="menu-collapsed">
+   <div class="bar"></div>
+   <nav class="mobile-menu">
+   <label for="show-menu" class="show-menu"><span>Add New Patient</span><div class="lines"></div></label>
+     <input type="checkbox" id="show-menu">
+     <ul id="menu">
+     <li><a href="patients.html">Patients</a></li>
+     <li><a href="appointments.html">Appointments</a>		</li>
+     <li><a href="index.html">Sign Out</a></li>
+   </ul>
+   </nav>
+
+   <div class="container" id="patient-form">
+     <form>
+       <ul class="flex-outer">
+         <li>
+           <label for="first-name">First Name</label>
+           <input type="text" id="first-name" placeholder="Enter first name here">
+         </li>
+         <li>
+           <label for="last-name">Last Name</label>
+           <input type="text" id="last-name" placeholder="Enter last name here">
+         </li>
+         <li>
+           <label for="ohip">OHIP</label>
+           <input type="text" id="ohip" placeholder="Enter insurance number">
+         </li>
+
+         <li>
+           <label for="gender">Gender</label>
+           <div class="genderChoice">
+
+           <input type="radio" name="gender" class="gen" value="Female">Female</label>
+           <input type="radio" name="gender" class="gen" value="Male">Male</label>
+
+           </div>
+         </li>
+         <li>
+           <label for="dob">DOB</label>
+           <input type="text" id="dob" placeholder="Enter date of birth here">
+         </li>
+         <li>
+           <label for="phone">Phone</label>
+           <input type="tel" id="phone" placeholder="Enter phone here">
+         </li>
+
+         <li>
+           <label for="address">Address</label>
+           <textarea rows="6" id="address" placeholder="Enter address here"></textarea>
+         </li>
+
+         <li>
+           <button onclick="postPatient()">Submit</button>
+         </li>
+       </ul>
+     </form>
+   </div>
+
+
+        </div>
+        <script src="jscripts/addpatient.js"></script>
+    </body>
+</html>

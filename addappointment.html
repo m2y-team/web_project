@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/toolbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/addappointment.css">
+
+    </head>
+    <body>
+
+  <div class="menu-collapsed">
+   <div class="bar"></div>
+   <nav class="mobile-menu">
+   <label for="show-menu" class="show-menu"><span>Add New Patient</span><div class="lines"></div></label>
+     <input type="checkbox" id="show-menu">
+     <ul id="menu">
+     <li><a href="patients.html">Patients</a></li>
+     <li><a href="appointments.html">Appointments</a>		</li>
+     <li><a href="index.html">Sign Out</a></li>
+   </ul>
+   </nav>
+
+   <div class="container" id="appointment-form">
+     <form>
+       <ul class="flex-outer">
+         <li>
+           <label for="patient-name">Patient Name</label>
+           <input type="text" id="patient-name" placeholder="Enter the patient name here">
+         </li>
+         <li>
+           <label for="patientId">Patient OHIP</label>
+           <input type="text" id="patient-Id" placeholder="Enter OHIP">
+         </li>
+         <li>
+           <label for="date">Date</label>
+           <input type="text" id="date" placeholder="Enter the date here">
+         </li>
+         <li>
+           <label for="time">Time</label>
+           <input type="text" id="time" placeholder="Enter the time ">
+         </li>
+         <li>
+           <label for="comments">Comments</label>
+           <input type="text" id="comments" placeholder="Enter the comments here">
+         </li>
+         <li>
+           <button onclick="postAppointment()">Submit</button>
+         </li>
+       </ul>
+     </form>
+   </div>
+
+
+        </div>
+        <script src="jscripts/addappointment.js"></script>
+    </body>
+</html>

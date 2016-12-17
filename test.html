@@ -11,7 +11,7 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="styles/patients.css">
+        <link rel="stylesheet" type="text/css" href="styles/appointment.css">
         <link rel="stylesheet" type="text/css" href="styles/toolbar.css">
 
     </head>
@@ -20,26 +20,35 @@
   <div class="menu-collapsed">
    <div class="bar"></div>
    <nav class="mobile-menu">
-   <label for="show-menu" class="show-menu"><span>Patients</span><div class="lines"></div></label>
+   <label for="show-menu" class="show-menu"><span>Appointments</span><div class="lines"></div></label>
      <input type="checkbox" id="show-menu">
-       <ul id="menu">
-       <li><a href="patients.html">Patients</a></li>
-       <li><a href="appointments.html">Appointments</a>		</li>
-       <li><a href="index.html">Sign Out</a></li>
-     </ul>
+     <ul id="menu">
+     <li><a href="patients.html">Patients</a></li>
+     <li><a href="appointments.html">Appointments</a>		</li>
+     <li><a href="index.html">Sign Out</a></li>
+   </ul>
    </nav>
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 " id="list" style="overflow:scroll;">
-                  <a href='addpatient.html'><div class='post' id="addPost">Add a New Patient</div></a>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 " id="list" style="overflow:scroll;">
+                  <a href='addappointment.html'><div class='post' id="addPost">Add a new appointment</div></a>
+                  <a href='#'><div class='post'>
+                    <div class='name'><b>First Name</b> - 0000000000</div>
+                    <div><u>12-12-2016 00:00</u></div>
+                    <div class='comment'>some comment goes here</div></div></a>
+                  <a href='#'><div class='post'>First Name 0000000000 12-12-2016 00:00</div></a>
+                  <a href='#'><div class='post'>First Name 0000000000 12-12-2016 00:00</div></a>
+                  <a href='#'><div class='post'>First Name 0000000000 12-12-2016 00:00</div></a>
                 </div>
 
-                <div id="posts" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                </div>
+
+                <!--div id="posts" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                </div-->
+
 
             </div>
         </div>
-        <script src="jscripts/patient.js"></script>
+        <script src="jscripts/appointment.js"></script>
     </body>
 </html>

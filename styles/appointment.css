@@ -19,12 +19,14 @@ body {
   display: table;
 }
 
-
+.comment {
+  color: #999;
+}
 
 .post {
         text-align: center;
         /*font-size: 2em;*/
-        height: 5em;
+        height: 7em;
         border-width: 1px;
         border-style: solid;
         border-color: #ddd;
@@ -51,48 +53,35 @@ body {
 }
 
 #addPost{
-  background-color: #FF4081;
+  background-color: #FF9800;
   color: #fff;
   padding: 1.5em;
 }
 #addPost:hover{
   background-color: #fff;
-  color: #FF4081;
+  color: #FF9800;
 }
 
 a{
   color: #212121;
   text-align: center;
-  
+
 }
 a:hover{
   text-decoration: none;
-  color: #FF4081;
+  color: #000;
 }
-
-div .panel-heading {
-    background-image: none;
-    background-color: #fff;
-    color: #FF4081;
-    font-size: 1.5em;
-
+a:visited{
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
 }
-
-div #title {
-    font-weight: bold;
+a:visited{
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
 }
 
 div.row{
   margin-top: 60px;
 }
-
-@media (min-width:800px) {
-
-
-
-}
-
-
-/*#description {
-    margin: 3%;
-}*/

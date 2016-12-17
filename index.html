@@ -5,16 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Health Owl</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
   <!-- TODO add manifest here -->
   <link rel="manifest" href="/manifest.json">
-  <!-- Add to home screen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+
 </head>
 
 
@@ -25,46 +33,35 @@
       <div class="logo">
         <img class="logo_img" src="images/health_owl.png">
       </div>
+
       <div class="cont_centrar">
       <div class="cont_login">
-        <form action="">
-        <div class="cont_tabs_login">
-          <ul class='ul_tabs'>
-            <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
-            <span class="linea_bajo_nom"></span>
-            </li>
-            <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>
-            </li>
-          </ul>
-          </div>
+
+
       <div class="cont_text_inputs">
-          <input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />
 
-        <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="emauil_us" />
+        <input type="email" id="txtemail" class="input_form_sign d_block active_inp" placeholder="EMAIL">
+        <input type="password" id="txtpwd" class="input_form_sign d_block  active_inp" placeholder="PASSWORD">
 
-        <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />
-       <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" />
-
-        <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>
-    <div class="terms_and_cons d_none">
-        <p><input type="checkbox" name="terms_and_cons" /> <label for="terms_and_cons">Accept  Terms and Conditions.</label></p>
-
-        </div>
-          </div>
+      </div>
     <div class="cont_btn">
-         <button class="btn_sign" onclick="signedClick()"><a class="menu_button" href="menu.html">SIGN IN</button></a>
+         <button class="btn_sign" onclick="signedClick()">SIGN IN</button>
+
 
           </div>
 
-        </form>
+
+
         </div>
 
       </div>
 
-
+<div id="footer"></div>
     </div>
 
   </main>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
   <script src="jscripts/app.js" async></script>
 
 </body>
